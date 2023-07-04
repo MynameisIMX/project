@@ -1,3 +1,4 @@
+import React from "react";
 import 'app/styles/index.scss';
 import { StoryObj } from '@storybook/react';
 import {BrowserRouter} from "react-router-dom";

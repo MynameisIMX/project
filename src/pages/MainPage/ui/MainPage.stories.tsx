@@ -16,7 +16,7 @@ export default {
   },
 } as ComponentMeta<typeof MainPage>;
 
-const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...args}/>
+const Template: ComponentStory<typeof MainPage> = (args) => <MainPage {...(args as object)}/>
 
 export const Primary = Template.bind({});
 Primary.args = {};

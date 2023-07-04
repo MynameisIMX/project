@@ -1,8 +1,8 @@
-import 'app/styles/index.scss';
-import { StoryObj } from '@storybook/react';
+import React from "react";
+import { Story } from '@storybook/react';
 import {Theme} from "app/providers/ThemeProvider";
 
-export const ThemeDecorator = (theme: Theme) => (StoryComponent: StoryObj) => {
+export const ThemeDecorator = (theme: Theme) => (StoryComponent: Story ) => {
   return(
     <div className={`app ${theme}`}>
       <StoryComponent/>

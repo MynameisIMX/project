@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import {Theme} from "app/providers/ThemeProvider";
-import {SideBar} from "./Sidebar.tsx";
+import {SideBar} from "./SideBar";
 
 export default {
   title: 'shared/SideBar',
