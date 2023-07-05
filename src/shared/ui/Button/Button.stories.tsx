@@ -28,12 +28,26 @@ Clear.args = {
 }
 Clear.decorators = [ThemeDecorator(Theme.LIGHT)];
 
+export const ClearInverted = Template.bind({});
+ClearInverted.args = {
+  children: 'Text',
+  theme: ThemeButton.CLEAR_INVERTED,
+}
+ClearInverted.decorators = [ThemeDecorator(Theme.LIGHT)];
+
 export const Outline = Template.bind({});
 Outline.args = {
   children: 'Text',
   theme: ThemeButton.OUTLINE,
 }
 Outline.decorators = [ThemeDecorator(Theme.LIGHT)];
+
+export const OutlineInverted = Template.bind({});
+OutlineInverted.args = {
+  children: 'Text',
+  theme: ThemeButton.OUTLINE_INVERTED,
+}
+OutlineInverted.decorators = [ThemeDecorator(Theme.LIGHT)];
 
 export const OutlineDark = Template.bind({});
 OutlineDark.args = {
