@@ -23,7 +23,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['react', 'i18next'],
+  plugins: ['react', 'i18next', 'react-hooks'],
   rules: {
     'react/jsx-indent': ["error", 2],
     'react/jsx-filename-extension': [2, {
@@ -46,7 +46,9 @@ module.exports = {
     }],
     'max-len': ['error', {
       "ignoreComments": true
-    }]
+    }],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
   globals: {
     '__ID_DEV__': true
