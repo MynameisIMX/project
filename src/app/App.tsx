@@ -10,12 +10,6 @@ import {SideBar} from "widgets/Sidebar";
 const App = () => {
   const {theme} = useTheme();
 
-  useEffect(() => {
-    if (Math.random() > 0.5) {
-      throw new Error('Test');
-    }
-  }, [])
-
   return (
     <div className={classNames('app', {}, [theme])}>
       <Suspense fallback="">
