@@ -16,9 +16,9 @@ export const Counter = () => {
   };
   return (
     <div>
-      <h1>value = {counterValue}</h1>
-      <Button onClick={increment}>Increment</Button>
-      <Button onClick={decrement}>Decrement</Button>
+      <h1 data-testid='value-title'>value = {counterValue}</h1>
+      <Button onClick={increment} data-testid='increment-btn'>Increment</Button>
+      <Button onClick={decrement} data-testid='decrement-btn'>Decrement</Button>
     </div>
   );
 };
