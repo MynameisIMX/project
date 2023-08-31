@@ -10,11 +10,11 @@ import {getLoginState} from "entities/User/model/selectors/getLoginState/getLogi
 import {loginByUsername} from "features/AuthByUsername/model/services/loginByUsername/loginByUsername";
 import {Text, TextTheme} from "shared/ui/Text/Text";
 
-interface LoginFormProps {
+export interface LoginFormProps {
   className?: string,
 }
 
-export const LoginForm = memo(({ className }: LoginFormProps) => {
+const LoginForm = memo(({ className }: LoginFormProps) => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const { username, password, error, isLoading } = useSelector(getLoginState);
@@ -41,3 +41,5 @@ export const LoginForm = memo(({ className }: LoginFormProps) => {
     </div>
   );
 });
+
+export default LoginForm;
