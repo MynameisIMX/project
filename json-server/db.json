@@ -13,6 +13,12 @@
 		}
 	],
 	"profile": {
-		"name": "typicode"
+		"first": "Test",
+		"lastname": "Testov",
+		"age": "22",
+		"currency": "RUB",
+		"country": "Russia",
+		"city": "Moscow",
+		"avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
 	}
 }
