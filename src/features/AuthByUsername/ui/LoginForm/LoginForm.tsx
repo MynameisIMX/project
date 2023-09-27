@@ -2,7 +2,7 @@ import React, {memo, useCallback, useEffect} from 'react';
 import {classNames} from "shared/lib/classNames/classNames";
 import cls from './LoginForm.module.scss';
 import {useTranslation} from "react-i18next";
-import {Button, ThemeButton} from "shared/ui/Button/Button";
+import {Button, ButtonTheme } from "shared/ui/Button/Button";
 import {Input} from "shared/ui/Input/Input";
 import {useSelector, useStore} from "react-redux";
 import {loginActions, loginReducer} from "../../model/slice/loginSlice";
@@ -54,7 +54,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
         { error && <Text text={error} theme={TextTheme.ERROR}/> }
         <Input type="text" className={cls.input} placeholder='Введите username' autofocus onChange={onChangeUsername} value={username}/>
         <Input type="text" className={cls.input} placeholder='Введите пароль' onChange={onChangePassword} value={password}/>
-        <Button className={cls.loginBtn} theme={ThemeButton.OUTLINE} onClick={onLoginClick} disabled={isLoading}>{ t('Войти') }</Button>
+        <Button className={cls.loginBtn} theme={ButtonTheme.OUTLINE} onClick={onLoginClick} disabled={isLoading}>{ t('Войти') }</Button>
       </div>
     </DynamicModuleLoader>
   );
