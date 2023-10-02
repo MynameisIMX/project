@@ -1,24 +1,32 @@
 {
-	"posts": [
-		{
-			"id": "1",
-			"title": "json-server",
-			"author": "typicode"
-		}
-	],
-	"comments": [
-		{
-			"id": "1",
-			"body": "some comment", "postId": 1
-		}
-	],
-	"profile": {
-		"first": "Test",
-		"lastname": "Testov",
-		"age": "22",
-		"currency": "RUB",
-		"country": "Russia",
-		"city": "Moscow",
-		"avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
-	}
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "123"
+    }
+  ],
+  "profile": {
+    "first": "Testa",
+    "lastname": "Testova",
+    "age": "22",
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
+  }
 }
