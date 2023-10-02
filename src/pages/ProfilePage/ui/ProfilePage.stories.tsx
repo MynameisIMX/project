@@ -1,9 +1,9 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
-import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import {Theme} from "app/providers/ThemeProvider";
-import ProfilePage from "./ProfilePage";
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
+import ProfilePage from 'pages/ProfilePage/ui/ProfilePage';
+import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 
 export default {
   title: 'pages/ProfilePage',
@@ -11,17 +11,14 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-  args: {
-    to: '/',
-  },
 } as ComponentMeta<typeof ProfilePage>;
 
-const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...(args as object)}/>
+const Template: ComponentStory<typeof ProfilePage> = (args) => <ProfilePage {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {};
-Primary.decorators = [ThemeDecorator(Theme.LIGHT)];
+export const Normal = Template.bind({});
+Normal.args = {};
+Normal.decorators = [StoreDecorator({})];
 
-export const Secondary = Template.bind({});
-Secondary.args = {};
-Secondary.decorators = [ThemeDecorator(Theme.LIGHT)];
+export const Dark = Template.bind({});
+Dark.args = {};
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];

@@ -1,4 +1,4 @@
-
+import { CounterSchema } from 'entities/Counter';
 import { UserSchema } from 'entities/User';
 import { LoginSchema } from 'features/AuthByUsername';
 import {
@@ -10,7 +10,6 @@ import { AxiosInstance } from 'axios';
 import { To } from 'history';
 import { NavigateOptions } from 'react-router';
 import { AppDispatch } from 'app/providers/StoreProvider';
-import {CounterSchema} from "app/entities/Counter";
 
 export interface StateSchema {
   counter: CounterSchema;
@@ -42,4 +41,5 @@ export interface ThunkExtraArg {
 export interface ThunkConfig<T> {
   rejectValue: T;
   extra: ThunkExtraArg;
+  state: StateSchema;
 }
