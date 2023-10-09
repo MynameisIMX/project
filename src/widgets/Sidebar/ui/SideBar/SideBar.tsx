@@ -1,11 +1,11 @@
 import React, {memo, useState} from 'react';
 import {classNames} from "shared/lib/classNames/classNames";
 import cls from './SideBar.module.scss';
-import {ThemeSwitcher} from "widgets/ThemeSwitcher/ui/ThemeSwitcher";
 import {LangSwitcher} from "widgets/LangSwitcher/LangSwitcher";
 import {Button, ButtonSize, ButtonTheme} from "shared/ui/Button/Button";
 import { SidebarItemsList } from '../../model/items';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
+import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
 
 interface SideBarProps {
   className?: string,
