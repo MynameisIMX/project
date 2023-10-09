@@ -21,12 +21,12 @@
     }
   ],
   "profile": {
-    "first": "Testa",
-    "lastname": "Testova",
-    "age": "22",
+    "first": "Test",
+    "lastname": "Testov",
+    "age": 30,
     "currency": "RUB",
     "country": "Russia",
-    "city": "Moscow",
+    "city": "Test",
     "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
   }
 }
