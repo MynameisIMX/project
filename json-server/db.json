@@ -102,13 +102,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+	    "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+	    "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
     }
   ],
   "profile": {
