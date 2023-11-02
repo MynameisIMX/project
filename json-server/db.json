@@ -113,13 +113,26 @@
 	    "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
     }
   ],
-  "profile": {
-    "first": "Test",
-    "lastname": "Testov",
-    "age": 30,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Test",
-    "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
-  }
+  "profile": [
+	  {
+		  "id": "1",
+		  "first": "Test",
+		  "lastname": "Testov",
+		  "age": 30,
+		  "currency": "RUB",
+		  "country": "Russia",
+		  "city": "Test",
+		  "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
+	  },
+	  {
+		  "id": "2",
+		  "first": "Igor",
+		  "lastname": "Igorov",
+		  "age": 30,
+		  "currency": "RUB",
+		  "country": "Russia",
+		  "city": "Test",
+		  "avatar": "https://i.pinimg.com/736x/45/f5/f0/45f5f0f83596f09de5d17fec06eab31f.jpg"
+	  }
+  ]
 }

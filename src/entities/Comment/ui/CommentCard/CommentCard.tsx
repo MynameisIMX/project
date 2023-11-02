@@ -2,9 +2,11 @@ import React, { memo } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
 import { Text, TextSize } from 'shared/ui/Text/Text';
+import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import cls from './CommentCard.module.scss';
 import { Comment } from 'entities/Comment';
+import {RoutePath} from "shared/config/routeConfig/routeConfig";
 
 interface CommentCardProps {
     className?: string;
@@ -18,10 +20,10 @@ export const CommentCard = memo((props: CommentCardProps) => {
     if (isLoading) {
         return (
             <div className={classNames(cls.CommentCard, {}, [className])}>
-                <div className={cls.header}>
+                <AppLink to={`${RoutePath.profile}${comment.user.id}`} className={cls.header}>
                     <Skeleton width={30} height={30} border="50%" />
                     <Skeleton height={16} width={100} className={cls.username} />
-                </div>
+                </AppLink>
                 <Skeleton className={cls.text} width="100%" height={50} />
             </div>
         );
